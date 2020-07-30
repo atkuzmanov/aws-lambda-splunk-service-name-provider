@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "systemCode": "",
+    "name": "example-eu cluster health",
+    "description": "Health of the whole cluster served from cache.",
+    "checks": [
+        {
+            "id": "",
+            "name": "example-neo4j",
+            "ok": true,
+            "severity": 2,
+            "businessImpact": "On its own this failure does not have a business impact but it represents a degradation of the cluster health.",
+            "technicalSummary": "The service is not healthy. Please check the panic guide. Service healthcheck: https://example-eu.com/__health/__pods-health?service-name=example-neo4j",
+            "panicGuide": "https://sites.google.com/example/...",
+            "checkOutput": "2/2 pods available",
+            "lastUpdated": "2019-06-07T10:43:07.700000000Z"
+        },
+        {
+            "id": "",
+            "name": "example-component",
+            "ok": true,
+            "severity": 2,
+            "businessImpact": "On its own this failure does not have a business impact but it represents a degradation of the cluster health.",
+            "technicalSummary": "The service is not healthy. Please check the panic guide. Service healthcheck: https://example-eu.com/__health/__pods-health?service-name=example-component",
+            "panicGuide": "https://sites.google.com/example/...",
+            "checkOutput": "2/2 pods available",
+            "lastUpdated": "2019-06-07T10:42:40.500000000Z"
+        }
+    ],
+    "ok": false,
+    "severity": 2
+}
